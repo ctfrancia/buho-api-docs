@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>
+      Categories
+    </title>
+    
+
+
+
+
+
+<link
+  href="/styles/screen.css"
+  rel="stylesheet"
+  media="screen"
+   />
+<link
+  href="/styles/print.css"
+  rel="stylesheet"
+  media="print"
+   />
+
+    
+
+
+
+
+<script
+  src="/js/index.js"
+  
+  defer></script>
+
+    
+    <style>
+      [x-cloak] {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body class="index" x-data="{ navOpen: false }" x-cloak>
+    <a
+      href="#"
+      id="nav-button"
+      @click="navOpen = !navOpen"
+      :class="{'open': navOpen }">
+      <span>
+        NAV
+        <img src="/images/navbar.png" />
+      </span>
+    </a>
+    <div class="toc-wrapper" :class="{'open': navOpen }">
+      
+      <img src="/images/logo.png" class="logo" />
+
+      
+      
+  
+  
+    
+  
+  <ul
+    id="toc"
+    class="toc-list-h1"
+    x-data="tocController"
+    x-init="load([{&#34;id&#34;:&#34;introduction-10&#34;,&#34;level&#34;:1,&#34;sub&#34;:[{&#34;id&#34;:&#34;about-10&#34;,&#34;level&#34;:2,&#34;sub&#34;:[{&#34;id&#34;:&#34;the-problem-10&#34;,&#34;level&#34;:3,&#34;title&#34;:&#34;The problem&#34;},{&#34;id&#34;:&#34;the-solution-10&#34;,&#34;level&#34;:3,&#34;title&#34;:&#34;The solution&#34;}],&#34;title&#34;:&#34;About&#34;}],&#34;title&#34;:&#34;Introduction&#34;},{&#34;id&#34;:&#34;authentication-10&#34;,&#34;level&#34;:1,&#34;sub&#34;:[{&#34;id&#34;:&#34;how-to-create-a-consumer-10&#34;,&#34;level&#34;:2,&#34;sub&#34;:[{&#34;id&#34;:&#34;request-10&#34;,&#34;level&#34;:3,&#34;title&#34;:&#34;Request&#34;},{&#34;id&#34;:&#34;response-10&#34;,&#34;level&#34;:3,&#34;title&#34;:&#34;Response&#34;}],&#34;title&#34;:&#34;How to Create a Consumer&#34;},{&#34;id&#34;:&#34;how-to-authenticate-10&#34;,&#34;level&#34;:2,&#34;sub&#34;:[{&#34;id&#34;:&#34;request-1-8&#34;,&#34;level&#34;:3,&#34;title&#34;:&#34;Request&#34;},{&#34;id&#34;:&#34;response-1-8&#34;,&#34;level&#34;:3,&#34;title&#34;:&#34;Response&#34;}],&#34;title&#34;:&#34;How to Authenticate&#34;}],&#34;title&#34;:&#34;Authentication&#34;}])"
+    @scroll.window="onScroll()">
+    
+    <template x-for="row in rows">
+      <li>
+        <a
+          x-text="row.title"
+          @click="click(row)"
+          :href="`#${row.id}`"
+          class="toc-link"
+          x-bind="rowClass(row)"></a>
+        
+          <ul x-show="row.open" x-bind="transitions()" class="da-toc-list-h2">
+            <template x-for="row in row.sub">
+              <li>
+                <a
+                  x-text="row.title"
+                  @click="click(row)"
+                  :href="`#${row.id}`"
+                  class="toc-link"
+                  x-bind="rowClass(row)"></a>
+                
+              </li>
+            </template>
+          </ul>
+        
+      </li>
+    </template>
+  </ul>
+
+      
+      
+      
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        
+  
+    
+  
+    
+  
+  
+    
+
+
+
+  
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+  
+
+
+
+<h1 id="introduction-10">Introduction</h1>
+<p>First of all I would like to thank you for taking the time to read the docs.</p>
+<p>Next, I would like to point out that the code for this project can be found <a href="https://github.com/ctfrancia/buho">here</a>.</p>
+
+
+
+
+  
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+  
+
+
+
+<h2 id="about-10">About</h2>
+<p>Búho, which means &ldquo;Owl&rdquo; in spanish, has the aim and goal of being a world wide aggrogator of chess games/tournaments.
+The goal is that if you are in Spain and want to write a front end for creating tournaments in your country/region than you can do so.</p>
+
+
+
+
+  
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+  
+
+
+
+<h3 id="the-problem-10">The problem</h3>
+<p>The creator of this api lives in Barcelona, Spain. In Barcelona there are many clubs in the Capital city of Catalonia, however, communication of the tournaments
+are often done through word of mouth or through WhatsApp messages. This is not a good way to communicate to the chess community.</p>
+
+
+
+
+  
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+  
+
+
+
+<h3 id="the-solution-10">The solution</h3>
+<p>The solution to this is to create a back-end aggregator of chess games/tournaments. This way, if you are a front-end developer in Barcelona and you want create
+a front end for your chess club you can do so. Or a front end for your region, or country or world wide, you can do so.
+Providing a platform for chess players to find tournaments in their area or in the world allowing for a better community.</p>
+
+  
+    
+
+
+
+  
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+  
+
+
+
+<h1 id="authentication-10">Authentication</h1>
+<p>This section will define everything you need to know about authentication within the Búho API.</p>
+
+
+
+
+  
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+  
+
+
+
+<h2 id="how-to-create-a-consumer-10">How to Create a Consumer</h2>
+<p>A &ldquo;Comsumer&rdquo; is the person that is using the API. This terminanology is used to differentiate a &ldquo;user&rdquo;.</p>
+<p>A user is someone that is using the front end of the application.</p>
+<p>A consumer is someone that is using the API. e.g. a consumer is you, that is reading this documentation and consuming the API to server to your users.</p>
+
+
+
+
+  
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+  
+
+
+
+<h3 id="request-10">Request</h3>
+<blockquote>
+<p>Example Request:</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;first_name&#34;</span>: <span style="color:#e6db74">&#34;foo&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;last_name&#34;</span>: <span style="color:#e6db74">&#34;bar&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;email&#34;</span>: <span style="color:#e6db74">&#34;f@f.com&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;website&#34;</span>: <span style="color:#e6db74">&#34;foo.com&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><strong>Method</strong>: <code>POST</code></p>
+<p><strong>Endpoint</strong>: <code>/v1/auth/new/consumer</code></p>
+<p><strong>Fields</strong>:</p>
+<ul>
+<li><code>first_name</code> (string) - the first name of the consumer</li>
+<li><code>last_name</code> (string) - the last name of the consumer</li>
+<li><code>email</code> (string) - the email of the consumer</li>
+<li><code>website</code> (string) - the website of the consumer</li>
+</ul>
+<p><code>website</code> is important as this will be used for your uploads and resources</p>
+
+
+
+
+  
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+  
+
+
+
+<h3 id="response-10">Response</h3>
+<blockquote>
+<p>Example Response</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;consumer&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;ID&#34;</span>: <span style="color:#ae81ff">11</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;CreatedAt&#34;</span>: <span style="color:#e6db74">&#34;2025-01-08T13:49:30.210429+01:00&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;UpdatedAt&#34;</span>: <span style="color:#e6db74">&#34;2025-01-08T13:49:30.210429+01:00&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;DeletedAt&#34;</span>: <span style="color:#66d9ef">null</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;first_name&#34;</span>: <span style="color:#e6db74">&#34;foo&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;last_name&#34;</span>: <span style="color:#e6db74">&#34;bar&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;email&#34;</span>: <span style="color:#e6db74">&#34;f@f.com&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;password&#34;</span>: <span style="color:#e6db74">&#34;0M;&lt;Vb2+|fUhU+CW&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;website&#34;</span>: <span style="color:#e6db74">&#34;foo.com&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><strong>Status Code</strong>: <code>201</code></p>
+<p><strong>Fields</strong>:</p>
+<ul>
+<li><code>ID</code> (int) - the ID of the consumer</li>
+<li><code>CreatedAt</code> (string) - the time the consumer was created</li>
+<li><code>UpdatedAt</code> (string) - the time the consumer was updated</li>
+<li><code>DeletedAt</code> (string) - the time the consumer was deleted</li>
+<li><code>first_name</code> (string) - the first name of the consumer</li>
+<li><code>last_name</code> (string) - the last name of the consumer</li>
+<li><code>email</code> (string) - the email of the consumer</li>
+<li><code>password</code> (string) - the password of the consumer</li>
+<li><code>website</code> (string) - the website of the consumer</li>
+</ul>
+<p>the <code>password</code> field is the password that you will use to authenticate with the API.</p>
+<p>this password is what you will send in for the next stage of authentication, which is to get a token.
+you can see how this password is generated <a href="https://github.com/ctfrancia/buho/blob/37b2b685f875135b224f897591d0a26f3862d6df/internal/auth/auth.go#L86">here</a></p>
+
+
+
+
+  
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+  
+
+
+
+<h2 id="how-to-authenticate-10">How to Authenticate</h2>
+<p>Once you have created a consumer you can now authenticate with the API and get a token used for future requests.</p>
+
+
+
+
+  
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+  
+
+
+
+<h3 id="request-1-8">Request</h3>
+<blockquote>
+<p>Example Request:</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;email&#34;</span>: <span style="color:#e6db74">&#34;&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;password&#34;</span>: <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><strong>Method</strong>: <code>POST</code></p>
+<p><strong>Endpoint</strong>: <code>/v1/auth/login</code></p>
+<p><strong>NOTE</strong>: The password is the password that was generated when you created the consumer.</p>
+<p><strong>Fields</strong>:</p>
+<ul>
+<li><code>email</code> (string) - the email of the consumer</li>
+<li><code>password</code> (string) - the password of the consumer</li>
+</ul>
+
+
+
+
+  
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+  
+
+
+
+<h3 id="response-1-8">Response</h3>
+<blockquote>
+<p>Example Response</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;token&#34;</span>: <span style="color:#e6db74">&#34;your_token_here&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><strong>Status Code</strong>: <code>200</code></p>
+<p><strong>Fields</strong>:</p>
+<ul>
+<li><code>token</code> (string) - the token that you will use for future requests</li>
+</ul>
+
+  
+
+      </div>
+      <div class="dark-box">
+        
+      </div>
+    </div>
+    
+  </body>
+</html>

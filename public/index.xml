@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 08 Jan 2025 12:45:16 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction</title>
+      <link>http://localhost:1313/posts/main/</link>
+      <pubDate>Wed, 08 Jan 2025 12:02:33 +0100</pubDate>
+      <guid>http://localhost:1313/posts/main/</guid>
+      <description>&lt;h1 id=&#34;introduction-10&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;First of all I would like to thank you for taking the time to read the docs.&lt;/p&gt;&#xA;&lt;p&gt;Next, I would like to point out that the code for this project can be found &lt;a href=&#34;https://github.com/ctfrancia/buho&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;  &#xA;    &#xA;      &#xA;        &#xA;      &#xA;    &#xA;      &#xA;        &#xA;      &#xA;    &#xA;      &#xA;        &#xA;      &#xA;    &#xA;      &#xA;        &#xA;      &#xA;    &#xA;      &#xA;        &#xA;      &#xA;    &#xA;      &#xA;        &#xA;      &#xA;    &#xA;      &#xA;        &#xA;      &#xA;    &#xA;      &#xA;        &#xA;      &#xA;    &#xA;      &#xA;        &#xA;      &#xA;    &#xA;      &#xA;        &#xA;      &#xA;    &#xA;  &#xA;&#xA;&#xA;&#xA;&lt;h2 id=&#34;about-10&#34;&gt;About&lt;/h2&gt;&#xA;&lt;p&gt;Búho, which means &amp;ldquo;Owl&amp;rdquo; in spanish, has the aim and goal of being a world wide aggrogator of chess games/tournaments.&#xA;The goal is that if you are in Spain and want to write a front end for creating tournaments in your country/region than you can do so.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Authentication</title>
+      <link>http://localhost:1313/posts/authentication/</link>
+      <pubDate>Wed, 08 Jan 2025 12:45:16 +0100</pubDate>
+      <guid>http://localhost:1313/posts/authentication/</guid>
+      <description>&lt;h1 id=&#34;authentication-10&#34;&gt;Authentication&lt;/h1&gt;&#xA;&lt;p&gt;This section will define everything you need to know about authentication within the Búho API.&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;  &#xA;    &#xA;      &#xA;        &#xA;      &#xA;    &#xA;      &#xA;        &#xA;      &#xA;    &#xA;      &#xA;        &#xA;      &#xA;    &#xA;      &#xA;        &#xA;      &#xA;    &#xA;      &#xA;        &#xA;      &#xA;    &#xA;      &#xA;        &#xA;      &#xA;    &#xA;      &#xA;        &#xA;      &#xA;    &#xA;      &#xA;        &#xA;      &#xA;    &#xA;      &#xA;        &#xA;      &#xA;    &#xA;      &#xA;        &#xA;      &#xA;    &#xA;  &#xA;&#xA;&#xA;&#xA;&lt;h2 id=&#34;how-to-create-a-consumer-10&#34;&gt;How to Create a Consumer&lt;/h2&gt;&#xA;&lt;p&gt;A &amp;ldquo;Comsumer&amp;rdquo; is the person that is using the API. This terminanology is used to differentiate a &amp;ldquo;user&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;A user is someone that is using the front end of the application.&lt;/p&gt;&#xA;&lt;p&gt;A consumer is someone that is using the API. e.g. a consumer is you, that is reading this documentation and consuming the API to server to your users.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
