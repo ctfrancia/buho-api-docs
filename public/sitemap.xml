@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/posts/main/</loc>
+    <lastmod>2025-01-08T12:02:33+01:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/authentication/</loc>
     <lastmod>2025-01-08T12:45:16+01:00</lastmod>
   </url><url>
@@ -10,11 +13,6 @@
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
     <lastmod>2025-01-08T12:45:16+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/about/</loc>
-    <lastmod>2025-01-08T12:02:33+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/main/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>

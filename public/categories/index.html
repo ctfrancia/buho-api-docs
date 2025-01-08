@@ -68,7 +68,7 @@
     id="toc"
     class="toc-list-h1"
     x-data="tocController"
-    x-init="load([{&#34;id&#34;:&#34;introduction-10&#34;,&#34;level&#34;:1,&#34;sub&#34;:[{&#34;id&#34;:&#34;about-10&#34;,&#34;level&#34;:2,&#34;sub&#34;:[{&#34;id&#34;:&#34;the-problem-10&#34;,&#34;level&#34;:3,&#34;title&#34;:&#34;The problem&#34;},{&#34;id&#34;:&#34;the-solution-10&#34;,&#34;level&#34;:3,&#34;title&#34;:&#34;The solution&#34;}],&#34;title&#34;:&#34;About&#34;}],&#34;title&#34;:&#34;Introduction&#34;},{&#34;id&#34;:&#34;authentication-10&#34;,&#34;level&#34;:1,&#34;sub&#34;:[{&#34;id&#34;:&#34;how-to-create-a-consumer-10&#34;,&#34;level&#34;:2,&#34;sub&#34;:[{&#34;id&#34;:&#34;request-10&#34;,&#34;level&#34;:3,&#34;title&#34;:&#34;Request&#34;},{&#34;id&#34;:&#34;response-10&#34;,&#34;level&#34;:3,&#34;title&#34;:&#34;Response&#34;}],&#34;title&#34;:&#34;How to Create a Consumer&#34;},{&#34;id&#34;:&#34;how-to-authenticate-10&#34;,&#34;level&#34;:2,&#34;sub&#34;:[{&#34;id&#34;:&#34;request-1-8&#34;,&#34;level&#34;:3,&#34;title&#34;:&#34;Request&#34;},{&#34;id&#34;:&#34;response-1-8&#34;,&#34;level&#34;:3,&#34;title&#34;:&#34;Response&#34;}],&#34;title&#34;:&#34;How to Authenticate&#34;}],&#34;title&#34;:&#34;Authentication&#34;}])"
+    x-init="load([{&#34;id&#34;:&#34;introduction&#34;,&#34;level&#34;:1,&#34;sub&#34;:[{&#34;id&#34;:&#34;about&#34;,&#34;level&#34;:2,&#34;sub&#34;:[{&#34;id&#34;:&#34;the-problem&#34;,&#34;level&#34;:3,&#34;title&#34;:&#34;The problem&#34;},{&#34;id&#34;:&#34;the-solution&#34;,&#34;level&#34;:3,&#34;title&#34;:&#34;The solution&#34;}],&#34;title&#34;:&#34;About&#34;}],&#34;title&#34;:&#34;Introduction&#34;},{&#34;id&#34;:&#34;authentication&#34;,&#34;level&#34;:1,&#34;sub&#34;:[{&#34;id&#34;:&#34;how-to-create-a-consumer&#34;,&#34;level&#34;:2,&#34;sub&#34;:[{&#34;id&#34;:&#34;request&#34;,&#34;level&#34;:3,&#34;title&#34;:&#34;Request&#34;},{&#34;id&#34;:&#34;response&#34;,&#34;level&#34;:3,&#34;title&#34;:&#34;Response&#34;}],&#34;title&#34;:&#34;How to Create a Consumer&#34;},{&#34;id&#34;:&#34;how-to-authenticate&#34;,&#34;level&#34;:2,&#34;sub&#34;:[{&#34;id&#34;:&#34;request-1&#34;,&#34;level&#34;:3,&#34;title&#34;:&#34;Request&#34;},{&#34;id&#34;:&#34;response-1&#34;,&#34;level&#34;:3,&#34;title&#34;:&#34;Response&#34;}],&#34;title&#34;:&#34;How to Authenticate&#34;}],&#34;title&#34;:&#34;Authentication&#34;}])"
     @scroll.window="onScroll()">
     
     <template x-for="row in rows">
@@ -116,53 +116,9 @@
 
 
 
-  
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-  
 
 
-
-<h1 id="introduction-10">Introduction</h1>
+<h1 id="introduction">Introduction</h1>
 <p>First of all I would like to thank you for taking the time to read the docs.</p>
 <p>Next, I would like to point out that the code for this project can be found <a href="https://github.com/ctfrancia/buho">here</a>.</p>
 
@@ -170,52 +126,10 @@
 
 
   
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-  
 
 
 
-<h2 id="about-10">About</h2>
+<h2 id="about">About</h2>
 <p>Búho, which means &ldquo;Owl&rdquo; in spanish, has the aim and goal of being a world wide aggrogator of chess games/tournaments.
 The goal is that if you are in Spain and want to write a front end for creating tournaments in your country/region than you can do so.</p>
 
@@ -223,52 +137,10 @@ The goal is that if you are in Spain and want to write a front end for creating 
 
 
   
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-  
 
 
 
-<h3 id="the-problem-10">The problem</h3>
+<h3 id="the-problem">The problem</h3>
 <p>The creator of this api lives in Barcelona, Spain. In Barcelona there are many clubs in the Capital city of Catalonia, however, communication of the tournaments
 are often done through word of mouth or through WhatsApp messages. This is not a good way to communicate to the chess community.</p>
 
@@ -276,52 +148,10 @@ are often done through word of mouth or through WhatsApp messages. This is not a
 
 
   
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-  
 
 
 
-<h3 id="the-solution-10">The solution</h3>
+<h3 id="the-solution">The solution</h3>
 <p>The solution to this is to create a back-end aggregator of chess games/tournaments. This way, if you are a front-end developer in Barcelona and you want create
 a front end for your chess club you can do so. Or a front end for your region, or country or world wide, you can do so.
 Providing a platform for chess players to find tournaments in their area or in the world allowing for a better community.</p>
@@ -332,104 +162,20 @@ Providing a platform for chess players to find tournaments in their area or in t
 
 
   
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-  
 
 
 
-<h1 id="authentication-10">Authentication</h1>
+<h1 id="authentication">Authentication</h1>
 <p>This section will define everything you need to know about authentication within the Búho API.</p>
 
 
 
 
   
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-  
 
 
 
-<h2 id="how-to-create-a-consumer-10">How to Create a Consumer</h2>
+<h2 id="how-to-create-a-consumer">How to Create a Consumer</h2>
 <p>A &ldquo;Comsumer&rdquo; is the person that is using the API. This terminanology is used to differentiate a &ldquo;user&rdquo;.</p>
 <p>A user is someone that is using the front end of the application.</p>
 <p>A consumer is someone that is using the API. e.g. a consumer is you, that is reading this documentation and consuming the API to server to your users.</p>
@@ -438,52 +184,10 @@ Providing a platform for chess players to find tournaments in their area or in t
 
 
   
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-  
 
 
 
-<h3 id="request-10">Request</h3>
+<h3 id="request">Request</h3>
 <blockquote>
 <p>Example Request:</p>
 </blockquote>
@@ -508,52 +212,10 @@ Providing a platform for chess players to find tournaments in their area or in t
 
 
   
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-  
 
 
 
-<h3 id="response-10">Response</h3>
+<h3 id="response">Response</h3>
 <blockquote>
 <p>Example Response</p>
 </blockquote>
@@ -591,100 +253,20 @@ you can see how this password is generated <a href="https://github.com/ctfrancia
 
 
   
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-  
 
 
 
-<h2 id="how-to-authenticate-10">How to Authenticate</h2>
+<h2 id="how-to-authenticate">How to Authenticate</h2>
 <p>Once you have created a consumer you can now authenticate with the API and get a token used for future requests.</p>
 
 
 
 
   
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-    
-      
-    
-  
 
 
 
-<h3 id="request-1-8">Request</h3>
+<h3 id="request-1">Request</h3>
 <blockquote>
 <p>Example Request:</p>
 </blockquote>
@@ -705,48 +287,10 @@ you can see how this password is generated <a href="https://github.com/ctfrancia
 
 
   
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-    
-      
-    
-  
 
 
 
-<h3 id="response-1-8">Response</h3>
+<h3 id="response-1">Response</h3>
 <blockquote>
 <p>Example Response</p>
 </blockquote>
