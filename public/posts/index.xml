@@ -6,7 +6,7 @@
     <description>Recent content in Posts on Búho API Documentation</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 Jan 2025 12:45:16 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jan 2025 09:55:52 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction</title>
@@ -21,6 +21,13 @@
       <pubDate>Wed, 08 Jan 2025 12:45:16 +0100</pubDate>
       <guid>http://localhost:1313/posts/authentication/</guid>
       <description>&lt;h1 id=&#34;authentication&#34;&gt;Authentication&lt;/h1&gt;&#xA;&lt;p&gt;This section will define everything you need to know about authentication within the Búho API.&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;  &#xA;&#xA;&#xA;&#xA;&lt;h2 id=&#34;how-to-create-a-consumer&#34;&gt;How to Create a Consumer&lt;/h2&gt;&#xA;&lt;p&gt;A &amp;ldquo;Comsumer&amp;rdquo; is the person that is using the API. This terminanology is used to differentiate a &amp;ldquo;user&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;A user is someone that is using the front end of the application.&lt;/p&gt;&#xA;&lt;p&gt;A consumer is someone that is using the API. e.g. a consumer is you, that is reading this documentation and consuming the API to server to your users.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tournaments</title>
+      <link>http://localhost:1313/posts/tournaments/</link>
+      <pubDate>Thu, 09 Jan 2025 09:55:52 +0100</pubDate>
+      <guid>http://localhost:1313/posts/tournaments/</guid>
+      <description>&lt;h1 id=&#34;tournaments&#34;&gt;Tournaments&lt;/h1&gt;&#xA;&lt;p&gt;This chapter defines tournaments and their properties.&lt;/p&gt;&#xA;&lt;p&gt;A tournament is as defined as a competition involving a group of players or teams competing against each other to win a prize or title.&#xA;The tournament is played in a series of matches, with the winner of each match advancing to the next round, and the loser being eliminated from the competition.&#xA;The tournament continues in this manner until only one player or team remains, who is declared the winner of the tournament.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

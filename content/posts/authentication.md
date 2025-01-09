@@ -108,3 +108,31 @@ Once you have created a consumer you can now authenticate with the API and get a
 **Fields**:
 - `token` (string) - the token that you will use for future requests
 
+**NOTE**: This token is valid for 24 hours. After 24 hours you will need to authenticate again with endpoint `/v1/auth/new/token`
+
+
+## How to Authenticate with the Token
+```json
+{
+    "Authorization": "Bearer <YOUR_TOKEN>"
+}
+```
+Once you have a token you can now authenticate with the API have priviledges to access the further endpoints.
+
+To do this you will need to send the token in the header of your request.
+
+
+## How to Get a New Token
+```json
+{
+    "token": "your_token
+}
+```
+THIS NEEDS TO BE RETHOUGHT?
+If your token has expired you can get a new token by sending a request to the following endpoint.
+**Method**: `POST`
+
+**Endpoint**: `/v1/auth/new/token`
+
+**Fields**:
+- `token` (string) - your old token

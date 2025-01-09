@@ -22,3 +22,9 @@ are often done through word of mouth or through WhatsApp messages. This is not a
 The solution to this is to create a back-end aggregator of chess games/tournaments. This way, if you are a front-end developer in Barcelona and you want create 
 a front end for your chess club you can do so. Or a front end for your region, or country or world wide, you can do so.
 Providing a platform for chess players to find tournaments in their area or in the world allowing for a better community.
+
+## Vocabulary
+
+- `Consumer` - A consumer is the person that is using the API. This terminanology is used to differentiate a `User`.
+- `Domain`   - A domain is the website of the cosumer. This is important as this will be used for your uploads and resources.
+- `User`     - A user is someone that is using the front end of the `Domain`.
